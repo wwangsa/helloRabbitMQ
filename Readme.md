@@ -24,28 +24,13 @@ Using 3 docker containers to play around with Hello World - RabbitMQ. Install it
     ```
     PHP server can be access on http://localhost:8080/ but only command is being used. No web is needed.
 
-3. Create RabbitMQ container 
-    
-    ```bash
-    cd ~/Codes/docker-fs/phpRabbitMQ
-	# downgrade the package version due to docker composer compatibility issue
-	#vim composer.json
-	#{
-	#	"require": {
-	#		"php-amqplib/php-amqplib": "=3.0"
-	#	}
-	#}
-	docker pull composer
-	# Replace <command> with install or update 
-	docker run --rm --interactive --tty --volume $PWD:/app composer <command>
-	
-	# due php conflict version, below command is not recommended but we do it just a quick way to make it up and running
-	docker run --rm --interactive --tty --volume $PWD:/app composer install --ignore-platform-reqs --no-scripts
-    ```
 
-    RabbitMQ Hello World instructions
-    * [Python](pyRabbitMQ/Readme.md)
-    * [PHP](phpRabbitMQ/Readme.md)
+
+    
+RabbitMQ Hello World instructions
+
+* [Python](pyRabbitMQ/Readme.md)
+* [PHP](phpRabbitMQ/Readme.md)
 
 
 ## References
